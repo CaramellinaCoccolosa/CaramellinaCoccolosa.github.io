@@ -1,0 +1,91 @@
+body {
+  background-color: azure;
+  font-family: cursive, 'Almond Caramel';
+  padding: 0px;
+}
+
+#pleft {
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: blue;
+
+    /*border-radius: 5px;*/
+    background-color: lightblue;
+}
+
+#pboth {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+#divTitle {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    border-radius: 5px;
+    background-color: lightblue;
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive, 'Almond Caramel';
+}
+
+#whattaDo {
+    background-color: antiquewhite;
+    border-color: saddlebrown;
+    border-radius: 5px;
+    border-style: solid solid solid solid;
+    padding: 5px;
+}
+
+a:link {
+    color: #3d00e0;
+}
+
+a:visited {
+    color: #41c300;
+}
+
+.datalists {
+    color: red;
+}
+
+.contacts {grid-area: contacts}
+.info {grid-area: info}
+.credits {
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    padding: 0px;  
+    width: 100%;
+}
+.whattaDo{grid-area: whattaDo}
+
+.gridContainer {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'contacts contacts whattaDo whattaDo whattaDo'
+        '. . whattaDo whattaDo whattaDo'
+        'credits credits credits credits credits'
+}
+
+.credit1 {grid-area: item1; list-style-type: none; text-align: center}
+.credit2 {grid-area: item2; list-style-type: none; text-align: center}
+.credit3 {grid-area: item3; list-style-type: none; text-align: center}
+.creditsContainer {
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    padding: 0px;
+    width: 100%;
+    display: grid;
+    justify-content:space-evenly;
+    grid-template-areas:
+        'item1 item2 item3'
+}
+    
